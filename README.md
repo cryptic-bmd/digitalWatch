@@ -4,7 +4,8 @@
 
 ![digitalWatch](static/images/screenshot.jpg)
 
-**[Original Code Here](https://www.sololearn.com/en/compiler-playground/WcWtAWq05TaB)**
+<!-- **[Original Code Here](https://www.sololearn.com/en/compiler-playground/WcWtAWq05TaB)** -->
+<bold><a href="https://www.sololearn.com/en/compiler-playground/WcWtAWq05TaB?ref=app" target="_blank">Original Code Here</a></bold>
 
 ### Run Locally
 
