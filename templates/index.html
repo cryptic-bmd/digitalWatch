@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% block title %}
+    Digital Watch
+{% endblock %}
+
+{% block head %}
+    <meta name="title" content="Digital Watch." />
+    <meta name="description" content="Arbitrage Calculator to help you identify surebets" />
+{% endblock %}
+
+{% block content %}
+    <div class="watch-body">  
+        <div class="screen">
+            <div class="city">
+                <div class="inner">
+                    <input id="input" type="text" placeholder="LAGOS 🖋️"  autofocus/>
+                </div>
+            </div>
+
+            <div class="atmosphere">
+                <div id="temp">
+                        00°C
+                </div>
+                <span id="icon" class="material-symbols-outlined">
+                    umbrella
+                </span>
+                <!-- <img id="mood" src="https://openweathermap.org/img/wn/04n.png"/> -->
+            </div>
+            
+            <div id="desc">
+                Thunderstorm
+            </div>
+            
+            <div id="time">
+                <div id="real-time">
+                    12<span>:</span>11
+                </div>
+                <div id="time-div">
+                    <div id="sec">
+                        02
+                    </div>
+                    <div id="divider"></div>
+                    <div id="meridiem">
+                        AM
+                    </div>
+                </div>
+            </div>
+
+            <div id="date">
+                <b><span>Wed</span>, March 8, 2023</b>
+            </div>
+            
+            <div class="weather">
+                <div class="humidity" id="hum-id">
+                    <div id="in2">
+                        <p id="h">49</p>
+                        <span class="unit">%</span>
+                        <p id="h-idt">Humidity</p>
+                    </div>
+                </div>
+                <div class="wind" id="wind-id">
+                    <div id="in">
+                        <p id="w">1.2</p>
+                        <span class="unit">m/s</span>
+                        <p id="w-idt">Wind</p>
+                    </div>
+                </div>
+                <div class="pressure" id="pres-id">
+                    <div id="in1">
+                        <p id="p">90</p>
+                        <span class="unit">kPa</span>
+                        <p id="p-idt">Pressure</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+{% endblock %}

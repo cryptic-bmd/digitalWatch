@@ -7,7 +7,7 @@ window.onload = () => {
 		a10: 'umbrella', a11: 'thunderstorm',
 		a13: 'ac_unit', a50: 'foggy'
 	};
-	
+
 	// object with methods that fetch, process
 	// and manipulate weather data.
 	const getWeather = {
@@ -68,7 +68,7 @@ window.onload = () => {
 		10: 'November', 11: 'December'
 	};
 
-	let city = 'London';
+	let city = 'Lagos';
 
 	const showTime = () => {
 		const date = new Date();
@@ -100,7 +100,7 @@ window.onload = () => {
 		const desc = document.getElementById('desc')
 		
 		cityName = document.getElementById('input').value;
-		city = cityName != 0 ? cityName:'London';
+		city = cityName != 0 ? cityName:'Lagos';
 		
 		atmos.style.filter = 'blur(14px)';
 		desc.style.filter = 'blur(14px)';
