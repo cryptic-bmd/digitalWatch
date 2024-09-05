@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@800&family=Quicksand&family=Sora:wght@500&display=swap");
+
+
+body {
+	height: 100vh !important;
+	margin: 0;
+	display: grid;
+	place-items: center;
+	color: white;
+	font-family: Barlow, Arial, sans-serif;
+	background: linear-gradient(90deg, rgb(0, 0, 0) 10%, rgb(38, 38, 38));
+	background-attachment: fixed;
+	/* filter: blur(14px); */
+	transition: filter 0.5s;
+}
+
+.watch-body {
+	position: relative;
+	padding: 0.6rem;
+	border-radius: 40px;
+	background-color: black;
+	box-shadow: inset 2px 2px 5px #B3B3B3, inset -2px -2px 5px 2px #262626;
+}
+
+.screen {
+	position: relative;
+	top: 1px;
+	width: 200px;
+	height: 220px;
+	background: linear-gradient(135deg, rgb(13, 13, 13), rgb(0, 0, 0));
+	border-radius: 30px;
+}
+
+.city {
+	/* display: flex; */
+	/* flex-direction: column;
+	align-items: center;
+	justify-content: center; */
+	/* gap: 50px; */
+	position: relative;
+	top: 2%;
+	left: 50%;
+	width: 150px;
+	height: 24px;
+	transform: translate(-50%, 0);
+	background: black;
+	border-radius: 6px;
+	box-shadow: inset 2px 2px 5px #262626, inset -2px -2px 3px #262626;
+}
+
+.city input {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -58%);
+	width: 90%;
+	background: none;
+	border: none;
+	font-family: Quicksand, sans-serif;
+	text-align: center;
+	color: white;
+}
+
+input[type="text"] { 
+	outline: none;
+}
+
+::placeholder {
+	color: white;
+}
+
+#city-name {
+	font-size: 0.8rem;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.atmosphere {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
+	position: relative;
+	top: 3%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	width: 85%;
+	letter-spacing: 1px;
+}
+
+#temp {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: white;
+}
+
+#desc {
+	position: relative;
+	top: 3%;
+	left: 50%;
+	width: 100%;
+	transform: translate(-50%, 0);
+	text-transform: capitalize;
+	justify-content: left;
+	font-family: Quicksand, Arial, sans-serif;
+	font-size: 0.8rem;
+	text-align: center;
+	color: #FFA500;
+}
+
+#desc span {
+	color: white;
+}
+
+#time {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	top: 4.5%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	font-family: Sora, Arial, sans-serif;
+	font-size: 3rem;
+	width: 200px;
+	height: 50px;
+	text-align: center;
+	/* background-color: #FFA500; */
+}
+
+#time span {
+	color: #BFBFBF;
+}
+
+#time-div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 28px;
+	height: 40px;
+}
+
+#sec {
+	font-size: 0.9rem;
+	color: red;
+}
+
+#meridiem {
+	font-size: 0.8rem;
+	color: white;
+}
+
+#date {
+	position: relative;
+	top: 5.5%;
+	left: 50%;
+	width: 100%;
+	transform: translate(-50%, 0);
+	font-size: 0.7rem;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-align: center;
+	/* background-color: aliceblue; */
+}
+
+#date span {
+	color: red;
+}
+
+.weather {
+	position: relative;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	margin: 0;
+	width: 100%;
+}
+
+.humidity,
+.pressure,
+.wind {
+	position: relative;
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	background: none;
+	transition: opacity 0.5s;
+}
+
+.humidity {
+	left: 30%;
+	transform: translate(-30%, 0);
+	background: linear-gradient(180deg, white, black);
+}
+
+.wind {
+	top: -48px;
+	left: 70%;
+	transform: translate(-70%, 0);
+	background: linear-gradient(180deg, red, black);
+}
+
+.pressure {
+	top: -48px;
+	left: 70%;
+	transform: translate(-70%, 0);
+	display: none;
+	background: linear-gradient(180deg, red, black);
+	opacity: 0;
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+.decrease {
+	opacity: 0;
+}
+
+.increase {
+	opacity: 1;
+}
+
+.reduce {
+	opacity: 0;
+}
+
+.wind div,
+.pressure div,
+.humidity div {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: black;
+}
+
+.wind p, 
+.pressure p,
+.humidity p,
+.unit {
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	font-size: 8px;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+	color: white;
+}
+
+#w, #p, #h {
+	top: 6px;
+	margin: 0;
+	font-size: 1.2rem;
+	color: white;
+}
+
+.unit {
+	top: 26px;
+	margin: 0;
+	font-size: 9px;
+	color: #BFBFBF;
+}
