@@ -15,7 +15,13 @@
 git clone https://github.com/cryptic-bmd/digitalWatch.git
 ```
 
-2. Create a virtual environment:
+2. Navigate to the directory:
+
+```bash
+cd digitalWatch
+```
+
+3. Create a virtual environment:
 
 -   On macOS and Linux:
 
@@ -29,7 +35,7 @@ python3 -m venv venv
 python -m venv venv
 ```
 
-3. Activate the virtual environment:
+4. Activate the virtual environment:
 
 -   On macOS and Linux:
 
@@ -43,7 +49,7 @@ source venv/bin/activate
 venv\Scripts\activate
 ```
 
-4. Install the dependencies:
+5. Install the dependencies:
 
 -   On macOS and Linux:
 
@@ -57,7 +63,7 @@ pip3 install -r requirements.txt
 pip install -r requirements.txt
 ```
 
-5. Run
+6. Run
 
 -   On macOS and Linux:
 
