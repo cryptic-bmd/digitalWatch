@@ -1,6 +1,6 @@
 # digitalWatch
 
- A unique digital watch with a sprinkle of spice
+ A unique digital watch with a sprinkle of spice (16 March, 2023)
 
 ![digitalWatch](static/images/screenshot.jpg)
 
