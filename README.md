@@ -2,7 +2,7 @@
 
  A unique digital watch with a sprinkle of spice (16 March, 2023)
 
-![digitalWatch](static/images/screenshot.jpg)
+![digitalWatch](static/images/screenshot.png)
 
 <!-- **[Original Code Here](https://www.sololearn.com/en/compiler-playground/WcWtAWq05TaB)** -->
 <bold><a href="https://www.sololearn.com/en/compiler-playground/WcWtAWq05TaB?ref=app" target="_blank">Original Code Here</a></bold>
